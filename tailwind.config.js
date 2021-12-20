@@ -11,9 +11,15 @@ module.exports = {
       'desktop': '1024px',
       // => @media (min-width: 1024px) { ... }
     },
+    fontFamily: {
+      'bellefair': ['Bellefair', 'serif'],
+      'barlow': ['"Barlow Condensed"', 'sans-serif']
+    },
     extend: {
       backgroundImage: {
-        "test": "url('/assets/home/background-home-mobile.jpg')"
+        "home": "url('/assets/home/background-home-mobile.jpg')",
+        "home-tablet": "url('/assets/home/background-home-tablet.jpg')",
+        "home-desktop": "url('/assets/home/background-home-desktop.jpg')"
       }
     },
     colors: {
