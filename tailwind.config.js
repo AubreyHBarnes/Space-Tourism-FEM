@@ -15,6 +15,16 @@ module.exports = {
       'bellefair': ['Bellefair', 'serif'],
       'barlow': ['"Barlow Condensed"', 'sans-serif']
     },
+    fontSize: {
+      'h1': '150px',
+      'h2': '100px',
+      'h3': '56px',
+      'h4': '32px',
+      'h5': '28px',
+      'subhead1': '28px',
+      'subhead2': '14px',
+      'navtext': '16px'
+    },
     extend: {
       backgroundImage: {
         "home": "url('/assets/home/background-home-mobile.jpg')",
