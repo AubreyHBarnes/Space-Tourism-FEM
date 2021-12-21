@@ -11,14 +11,14 @@ export const Navbar = () => {
     return (
       <>
           <nav className="flex items-center flex-wrap pt-11">
-            <div className="w-full absolute desktop:top-11 desktop:after:absolute after:top-1/2 after:border-b-2 after:w-40 after:border-white after:z-20" >
+            <div className="w-full absolute desktop:top-11 desktop:after:absolute after:top-1/2 after:border-b-2 after:w-40 after:border-white desktop:after:z-20" >
                 <Link href='/'>
                 <a className='inline-flex items-center p-4'>
                     <Image src={"/assets/shared/logo.svg"} alt="Space Tourism Logo" height={30} width={30} />
                 </a>
                 </Link>
                 <button 
-                    className='float-right z-10 inline-flex p-4 hover:bg-green-600 rounded tablet:hidden text-white ml-auto hover:text-white outline-none'
+                    className='float-right -z-10 inline-flex p-4 hover:bg-green-600 rounded tablet:hidden text-white ml-auto hover:text-white outline-none'
                     onClick={handleClick}
                 >
                     <svg
