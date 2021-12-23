@@ -43,22 +43,22 @@ export const Navbar = () => {
             >
                 <div className='font-barlow tracking-[2.7px] mt-20 tablet:mt-0 tablet:inline-flex tablet:flex-row tablet:m-auto tablet:w-auto w-full tablet:items-center flex flex-col tablet:h-auto'>
                     <Link href='/'>
-                    <a className='indent-10 tablet:indent-0 desktop:inline-flex desktop:w-auto w-full px-3 py-8 rounded text-white font-bold text-navtext items-center justify-center hover:bg-green-600 hover:text-white '>
+                    <a className='indent-10 tablet:indent-0 desktop:inline-flex desktop:w-auto w-full px-3 py-6 rounded text-white font-bold text-navtext items-center justify-center hover:bg-green-600 hover:text-white '>
                     <b className="tablet:hidden desktop:inline">00</b> Home
                     </a>
                     </Link>
                     <Link href='/'>
-                    <a className='indent-10 tablet:indent-0 desktop:inline-flex desktop:w-auto w-full px-3 py-8 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
+                    <a className='indent-10 tablet:indent-0 desktop:inline-flex desktop:w-auto w-full px-3 py-6 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
                         <b className="tablet:hidden">01</b> Destination
                     </a>
                     </Link>
                     <Link href='/'>
-                    <a className='indent-10 tablet:indent-0 desktop:inline-flex desktop:w-auto w-full px-3 py-8 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
+                    <a className='indent-10 tablet:indent-0 desktop:inline-flex desktop:w-auto w-full px-3 py-6 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
                     <b className="tablet:hidden">02</b> Crew
                     </a>
                     </Link>
                     <Link href='/'>
-                    <a className='indent-10 tablet:indent-0 desktop:inline-flex desktop:w-auto w-full px-3 py-8 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
+                    <a className='indent-10 tablet:indent-0 desktop:inline-flex desktop:w-auto w-full px-3 py-6 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
                     <b className="tablet:hidden">03</b> Technology
                     </a>
                     </Link>

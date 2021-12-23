@@ -23,7 +23,8 @@ module.exports = {
       'h5': '28px',
       'subhead1': '28px',
       'subhead2': '14px',
-      'navtext': '16px'
+      'navtext': '16px',
+      'bodytext': '18px'
     },
     extend: {
       backgroundImage: {
