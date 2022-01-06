@@ -12,7 +12,7 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
             <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
             <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet" />
           </Head>
-          <body className="relative bg-home tablet:bg-home-tablet desktop:bg-home-desktop bg-no-repeat bg-cover">
+          <body>
             <Main />
             <NextScript />
           </body>

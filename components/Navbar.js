@@ -39,7 +39,7 @@ export const Navbar = () => {
             </div>
             <div className={`${
                 active ? '' : 'hidden'}
-                -z-10 w-2/3 h-screen tablet:h-auto frosted absolute desktop:top-6 top-0 right-0 tablet:inline-flex tablet:flex-grow `}
+                z-10 w-2/3 h-screen tablet:h-auto frosted absolute desktop:top-6 top-0 right-0 tablet:inline-flex tablet:flex-grow `}
             >
                 <div className='font-barlow tracking-[2.7px] mt-20 tablet:mt-0 tablet:inline-flex tablet:flex-row tablet:m-auto tablet:w-auto w-full tablet:items-center flex flex-col tablet:h-auto'>
                     <Link href='/'>
@@ -47,7 +47,7 @@ export const Navbar = () => {
                     <b className="tablet:hidden desktop:inline">00</b> Home
                     </a>
                     </Link>
-                    <Link href='/'>
+                    <Link href='/destination'>
                     <a className='indent-10 tablet:indent-0 desktop:inline-flex desktop:w-auto w-full px-3 py-6 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
                         <b className="tablet:hidden">01</b> Destination
                     </a>

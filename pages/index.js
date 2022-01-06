@@ -9,6 +9,8 @@ import { Navbar } from '../components/Navbar';
           <meta name="description" content="Description for Space Tourism" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
+        
+        <div className="main-wrapper relative bg-home tablet:bg-home-tablet desktop:bg-home-desktop bg-no-repeat bg-cover">
         <Navbar />
         <main className="relative h-screen">
           <section className="container flex flex-col desktop:flex-row justify-center items-center desktop:absolute desktop:top-1/4 desktop:left-1/2 desktop:-translate-x-1/2 mx-auto mt-8 tablet:mt-12 p-4">
@@ -25,6 +27,7 @@ import { Navbar } from '../components/Navbar';
             </div>
           </section>
         </main>
+        </div>
       </>
     );
   }
