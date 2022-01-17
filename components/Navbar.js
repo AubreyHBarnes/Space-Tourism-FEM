@@ -11,7 +11,7 @@ export const Navbar = () => {
     return (
       <>
           <nav className="flex items-center flex-wrap pt-11">
-            <div className="w-full absolute desktop:top-11 desktop:after:absolute after:top-1/2 after:border-b-2 after:w-1/3 after:border-white after:z-20 after:opacity-50" >
+            <div className="w-full absolute desktop:top-7 desktop:after:absolute after:top-1/2 after:border-b-2 after:w-1/3 after:border-white after:z-20 after:opacity-50" >
                 <Link href='/'>
                 <a className='inline-flex items-center p-4'>
                     <Image src={"/assets/shared/logo.svg"} alt="Space Tourism Logo" height={30} width={30} />

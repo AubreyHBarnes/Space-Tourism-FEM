@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { Navbar } from '../components/Navbar';
 
   export default function Home() {
@@ -23,7 +24,11 @@ import { Navbar } from '../components/Navbar';
               </p>
             </div>
             <div className="explore-btn my-10">
-              <button className="uppercase font-bellefair text-[1.5rem] tracking-widest bg-white m-auto w-[175px] h-[175px] rounded-full">Explore</button>
+            <Link href='/destination'>
+              <a>
+                <button className="uppercase font-bellefair text-[1.5rem] tracking-widest bg-white m-auto w-[175px] h-[175px] rounded-full">Explore</button>
+              </a>
+              </Link>
             </div>
           </section>
         </main>

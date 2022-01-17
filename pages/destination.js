@@ -8,16 +8,10 @@ import data from '../data.json'
 
 const Destination = () => {
 
-    // const [active, setActive] = useState(0);
-
-    // useEffect(() => {
-    //     //set initial data to moon
-    //     console.log(data.destinations[active].images.webp)
-    //     //when tabs change, change json data
-    // }, [active])
+    const [img, setImg] = useState(0);
 
     const handleClick = (index) => {
-        console.log(data.destinations[index].images.webp);
+        setImg(index);
         
     }
 
@@ -39,29 +33,19 @@ const Destination = () => {
                         </div>
                         <div className="px-[22.5%] tablet:px-[27%]">
                             <Image
-                                src="/assets/destination/image-moon.webp" 
+                                src={data.destinations[img].images.webp}
                                 alt="Moon" 
                                 width={445} 
                                 height={445} 
                                 loading="eager"
                                 layout="responsive"
+                                priority
                             />
                         </div>
                     </div>
                     <div className="data-wrapper">
                         <div className="tabs">
-                            {/* { data.destinations.map((destination) => {
-                               return <button key={destination.name} onClick={ () => {handleClick(event.target)}} 
-                               className="tablinks text-white p-8">{ destination.name }</button>
-                            }) } */}
-                            {/* <button  onClick={ () => {handleClick(event.target)}} 
-                               className="active tablinks text-white p-8">Moon</button>
-                            <button  onClick={ () => {handleClick(event.target)}} 
-                               className="tablinks text-white p-8">Mars</button>
-                            <button  onClick={ () => {handleClick(event.target)}} 
-                               className="tablinks text-white p-8">Europa</button>
-                            <button  onClick={ () => {handleClick(event.target)}} 
-                               className="tablinks text-white p-8">Titan</button> */}
+                            
                             <Tab.Group 
                                 onChange={(index) => {
                                     handleClick(index)
@@ -120,11 +104,6 @@ const Destination = () => {
                                     <Tab.Panel className="text-white">Content 4</Tab.Panel>
                                 </Tab.Panels>
                             </Tab.Group>
-                        </div>
-                        <div className="tab-data">
-                            <div id="">
-
-                            </div>
                         </div>
                     </div>
                 </section>
