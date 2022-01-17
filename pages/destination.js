@@ -8,10 +8,10 @@ import data from '../data.json'
 
 const Destination = () => {
 
-    const [img, setImg] = useState(0);
+    const [selection, setSelection] = useState(0);
 
     const handleClick = (index) => {
-        setImg(index);
+        setSelection(index);
         
     }
 
@@ -25,7 +25,7 @@ const Destination = () => {
             <div className="main-wrapper h-100 overflow-hidden relative bg-dest tablet:bg-dest-tablet 
             desktop:bg-dest-desktop bg-no-repeat bg-cover">
                 <Navbar />
-                <section className="my-16 dest-pg-wrapper">
+                <section className="my-16 dest-pg-wrapper px-8">
                     <div className="title-img-wrapper">
                         <div className=" page-title">
                             <h1 className="my-16 tracking-[3.7px] text-white text-center text-subhead1 font-barlow 
@@ -33,7 +33,7 @@ const Destination = () => {
                         </div>
                         <div className="px-[22.5%] tablet:px-[27%]">
                             <Image
-                                src={data.destinations[img].images.webp}
+                                src={data.destinations[selection].images.webp}
                                 alt="Moon" 
                                 width={445} 
                                 height={445} 
@@ -51,8 +51,8 @@ const Destination = () => {
                                     handleClick(index)
                                 }}
                             >
-                                <Tab.List>
-                                    <Tab className="text-white p-8 uppercase">
+                                <Tab.List className="flex items-start justify-center">
+                                    <Tab className="text-white p-4 uppercase">
                                     {({ selected }) => (
                                         <p
                                         className={
@@ -63,7 +63,7 @@ const Destination = () => {
                                         </p>
                                     )}
                                     </Tab>
-                                    <Tab className="text-white p-8">
+                                    <Tab className="text-white p-4 uppercase">
                                     {({ selected }) => (
                                         <p
                                         className={
@@ -74,7 +74,7 @@ const Destination = () => {
                                         </p>
                                     )}
                                     </Tab>
-                                    <Tab className="text-white p-8">
+                                    <Tab className="text-white p-4 uppercase">
                                     {({ selected }) => (
                                         <p
                                         className={
@@ -85,7 +85,7 @@ const Destination = () => {
                                         </p>
                                     )}
                                     </Tab>
-                                    <Tab className="text-white p-8">
+                                    <Tab className="text-white p-4 uppercase">
                                     {({ selected }) => (
                                         <p
                                         className={
@@ -98,10 +98,58 @@ const Destination = () => {
                                     </Tab>
                                 </Tab.List>
                                 <Tab.Panels>
-                                    <Tab.Panel className="text-white">Content 1</Tab.Panel>
-                                    <Tab.Panel className="text-white">Content 2</Tab.Panel>
-                                    <Tab.Panel className="text-white">Content 3</Tab.Panel>
-                                    <Tab.Panel className="text-white">Content 4</Tab.Panel>
+                                    <Tab.Panel className="text-white">
+                                        <h4 className="text-h3 uppercase font-bellefair text-center">{data.destinations[selection].name}</h4>
+                                        <p className="font-barlow text-[1.1rem] leading-[25px] tracking-wider">{data.destinations[selection].description}</p> 
+                                        <hr className="divide-white > * + * opacity-30 my-12" />
+                                        <div className="avg-dist">
+                                            <p>Avg. Distance</p>
+                                            <p>{data.destinations[selection].distance}</p>
+                                        </div>  
+                                        <div className="est-travel">
+                                            <p>Est. Travel Time</p>
+                                            <p>{data.destinations[selection].travel}</p>
+                                        </div>  
+                                    </Tab.Panel>
+                                    <Tab.Panel className="text-white">
+                                        <h4 className="text-h3 uppercase font-bellefair text-center">{data.destinations[selection].name}</h4>
+                                        <p className="font-barlow text-[1.1rem] leading-[25px] tracking-wider">{data.destinations[selection].description}</p> 
+                                        <hr className="divide-white > * + * opacity-30 my-12" />
+                                        <div className="avg-dist">
+                                            <p>Avg. Distance</p>
+                                            <p>{data.destinations[selection].distance}</p>
+                                        </div>  
+                                        <div className="est-travel">
+                                            <p>Est. Travel Time</p>
+                                            <p>{data.destinations[selection].travel}</p>
+                                        </div>  
+                                    </Tab.Panel>
+                                    <Tab.Panel className="text-white">
+                                        <h4 className="text-h3 uppercase font-bellefair text-center">{data.destinations[selection].name}</h4>
+                                        <p className="font-barlow text-[1.1rem] leading-[25px] tracking-wider">{data.destinations[selection].description}</p> 
+                                        <hr className="divide-white > * + * opacity-30 my-12" />
+                                        <div className="avg-dist">
+                                            <p>Avg. Distance</p>
+                                            <p>{data.destinations[selection].distance}</p>
+                                        </div>  
+                                        <div className="est-travel">
+                                            <p>Est. Travel Time</p>
+                                            <p>{data.destinations[selection].travel}</p>
+                                        </div>  
+                                    </Tab.Panel>
+                                    <Tab.Panel className="text-white">
+                                        <h4 className="text-h3 uppercase font-bellefair text-center">{data.destinations[selection].name}</h4>
+                                        <p className="font-barlow text-[1.1rem] leading-[25px] tracking-wider">{data.destinations[selection].description}</p> 
+                                        <hr className="divide-white > * + * opacity-30 my-12" />
+                                        <div className="avg-dist">
+                                            <p>Avg. Distance</p>
+                                            <p>{data.destinations[selection].distance}</p>
+                                        </div>  
+                                        <div className="est-travel">
+                                            <p>Est. Travel Time</p>
+                                            <p>{data.destinations[selection].travel}</p>
+                                        </div>  
+                                    </Tab.Panel>
                                 </Tab.Panels>
                             </Tab.Group>
                         </div>
