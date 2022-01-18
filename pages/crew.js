@@ -22,7 +22,7 @@ const Crew = () => {
                 <meta name="description" content="Description for Space Tourism" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className="main-wrapper h-screen overflow-hidden relative bg-crew tablet:bg-crew-tablet 
+            <div className="main-wrapper h-full overflow-hidden relative bg-crew tablet:bg-crew-tablet 
             desktop:bg-crew-desktop bg-no-repeat bg-cover">
                 <Navbar />
                 <section className="my-16 crew-pg-wrapper px-8 desktop:grid desktop:grid-cols-2">
@@ -30,7 +30,7 @@ const Crew = () => {
                         <h1 className="my-16 tracking-[3.7px] text-white text-center text-subhead1 font-barlow 
                         tracking-widest uppercase tablet:text-left tablet:pl-12"><span className="opacity-50 font-black">02</span> Meet Your Crew</h1>
                     </div>
-                    <div className="crew-container">
+                    <div className="crew-container flex flex-col tablet:flex-col-reverse">
                         <div className="crew-img-container px-[22.5%] tablet:px-[27%] desktop:px-[15%]">
                             <Image
                                     src={data.crew[selection].images.webp}
@@ -42,61 +42,76 @@ const Crew = () => {
                                     priority
                             />
                         </div>
-
+                        <div className="slider-container">
+                            <Tab.Group 
+                            as="div"
+                            className="flex flex-col tablet:flex-col-reverse justify-center items-center"
+                             onChange={(index) => {
+                                        handleClick(index)
+                                    }}>
+                                <Tab.List className="my-8">
+                                    <Tab as="span">
+                                    {({ selected }) => (
+                                        <button
+                                        className={
+                                            selected ? 'text-white p-2 mr-6 uppercase w-50px h-50px bg-white rounded-full' : 'text-white p-2 mr-6 uppercase w-50px h-50px bg-white/30 rounded-full'
+                                        }
+                                        >
+                                        </button>
+                                    )}
+                                    </Tab>
+                                    <Tab as="span">
+                                    {({ selected }) => (
+                                        <button
+                                        className={
+                                            selected ? 'text-white p-2 mr-6 uppercase w-50px h-50px bg-white rounded-full' : 'text-white p-2 mr-6 uppercase w-50px h-50px bg-white/30 rounded-full'
+                                        }
+                                        >
+                                        </button>
+                                    )}
+                                    </Tab>
+                                    <Tab as="span">
+                                    {({ selected }) => (
+                                        <button
+                                        className={
+                                            selected ? 'text-white p-2 mr-6 uppercase w-50px h-50px bg-white rounded-full' : 'text-white p-2 mr-6 uppercase w-50px h-50px bg-white/30 rounded-full'
+                                        }
+                                        >
+                                        </button>
+                                    )}
+                                    </Tab>
+                                    <Tab as="span">
+                                    {({ selected }) => (
+                                        <button
+                                        className={
+                                            selected ? 'text-white p-2 mr-6 uppercase w-50px h-50px bg-white rounded-full' : 'text-white p-2 mr-6 uppercase w-50px h-50px bg-white/30 rounded-full'
+                                        }
+                                        >
+                                        </button>
+                                    )}
+                                    </Tab>
+                                </Tab.List>
+                                <Tab.Panels>
+                                    <Tab.Panel className="text-white p-4">
+                                        <h4 className="uppercase font-bellefair text-[2rem] text-center"><span className="text-white/50 text-[1.5rem] block">{data.crew[selection].role}</span>{data.crew[selection].name}</h4>
+                                        <p className="font-barlow text-violet text-center text-[1.25rem]">{data.crew[selection].bio}</p>
+                                    </Tab.Panel>
+                                    <Tab.Panel className="text-white p-4">
+                                        <h4 className="uppercase font-bellefair text-[2rem] text-center"><span className="text-white/50 text-[1.5rem] block">{data.crew[selection].role}</span>{data.crew[selection].name}</h4>
+                                        <p className="font-barlow text-violet text-center text-[1.25rem]">{data.crew[selection].bio}</p>
+                                    </Tab.Panel>
+                                    <Tab.Panel className="text-white p-4">
+                                        <h4 className="uppercase font-bellefair text-[2rem] text-center"><span className="text-white/50 text-[1.5rem] block">{data.crew[selection].role}</span>{data.crew[selection].name}</h4>
+                                        <p className="font-barlow text-violet text-center text-[1.25rem]">{data.crew[selection].bio}</p>
+                                    </Tab.Panel>
+                                    <Tab.Panel className="text-white p-4">
+                                        <h4 className="uppercase font-bellefair text-[2rem] text-center"><span className="text-white/50 text-[1.5rem] block">{data.crew[selection].role}</span>{data.crew[selection].name}</h4>
+                                        <p className="font-barlow text-violet text-center text-[1.25rem]">{data.crew[selection].bio}</p>
+                                    </Tab.Panel>
+                                </Tab.Panels>
+                            </Tab.Group>
+                        </div>
                     </div>
-
-                    <Tab.Group onChange={(index) => {
-                                    handleClick(index)
-                                }}>
-                        <Tab.List>
-                            <Tab >
-                            {({ selected }) => (
-                                <button
-                                className={
-                                    selected ? 'text-white p-2 mr-6 uppercase w-50px h-50px bg-white rounded-full' : 'text-white p-2 mr-6 uppercase w-50px h-50px bg-white/30 rounded-full'
-                                }
-                                >
-                                </button>
-                            )}
-                            </Tab>
-                            <Tab >
-                            {({ selected }) => (
-                                <button
-                                className={
-                                    selected ? 'text-white p-2 mr-6 uppercase w-50px h-50px bg-white rounded-full' : 'text-white p-2 mr-6 uppercase w-50px h-50px bg-white/30 rounded-full'
-                                }
-                                >
-                                </button>
-                            )}
-                            </Tab>
-                            <Tab >
-                            {({ selected }) => (
-                                <button
-                                className={
-                                    selected ? 'text-white p-2 mr-6 uppercase w-50px h-50px bg-white rounded-full' : 'text-white p-2 mr-6 uppercase w-50px h-50px bg-white/30 rounded-full'
-                                }
-                                >
-                                </button>
-                            )}
-                            </Tab>
-                            <Tab >
-                            {({ selected }) => (
-                                <button
-                                className={
-                                    selected ? 'text-white p-2 mr-6 uppercase w-50px h-50px bg-white rounded-full' : 'text-white p-2 mr-6 uppercase w-50px h-50px bg-white/30 rounded-full'
-                                }
-                                >
-                                </button>
-                            )}
-                            </Tab>
-                        </Tab.List>
-                        <Tab.Panels>
-                            <Tab.Panel className="text-white p-4 uppercase">Content 1</Tab.Panel>
-                            <Tab.Panel className="text-white p-4 uppercase">Content 2</Tab.Panel>
-                            <Tab.Panel className="text-white p-4 uppercase">Content 3</Tab.Panel>
-                            <Tab.Panel className="text-white p-4 uppercase">Content 4</Tab.Panel>
-                        </Tab.Panels>
-                    </Tab.Group>
                 </section>
                 
 
