@@ -25,13 +25,13 @@ const Destination = () => {
             <div className="main-wrapper h-100 overflow-hidden relative bg-dest tablet:bg-dest-tablet 
             desktop:bg-dest-desktop bg-no-repeat bg-cover">
                 <Navbar />
-                <section className="my-16 dest-pg-wrapper px-8">
+                <section className="my-16 dest-pg-wrapper px-8 desktop:grid desktop:grid-cols-2">
                     <div className="title-img-wrapper">
                         <div className=" page-title">
                             <h1 className="my-16 tracking-[3.7px] text-white text-center text-subhead1 font-barlow 
                             tracking-widest uppercase tablet:text-left tablet:pl-12"><span className="opacity-50 font-black">01</span> Pick Your Destination</h1>
                         </div>
-                        <div className="px-[22.5%] tablet:px-[27%]">
+                        <div className="px-[22.5%] tablet:px-[27%] desktop:px-[15%]">
                             <Image
                                 src={data.destinations[selection].images.webp}
                                 alt="Moon" 
@@ -43,7 +43,7 @@ const Destination = () => {
                             />
                         </div>
                     </div>
-                    <div className="data-wrapper">
+                    <div className="data-wrapper desktop:py-36">
                         <div className="tabs">
                             
                             <Tab.Group 
@@ -102,14 +102,17 @@ const Destination = () => {
                                         <h4 className="text-h3 uppercase font-bellefair text-center">{data.destinations[selection].name}</h4>
                                         <p className="font-barlow text-[1.1rem] text-center leading-[25px] tracking-wider px-8">{data.destinations[selection].description}</p> 
                                         <hr className="divide-white > * + * opacity-30 my-12" />
-                                        <div className="avg-dist text-center mb-8">
-                                            <p className="font-barlow text-bodytext text-violet uppercase tracking-widest">Avg. Distance</p>
-                                            <p className="font-bellefair text-h5 uppercase">{data.destinations[selection].distance}</p>
-                                        </div>  
-                                        <div className="est-travel text-center">
-                                            <p className="font-barlow text-bodytext text-violet uppercase tracking-widest">Est. Travel Time</p>
-                                            <p className="font-bellefair text-h5 uppercase">{data.destinations[selection].travel}</p>
-                                        </div>  
+                                        <div className="desc-container desktop:grid desktop:grid-cols-2">
+                                            <div className="avg-dist text-center mb-8 desktop:text-left">
+                                                <p className="font-barlow text-bodytext text-violet uppercase tracking-widest">Avg. Distance</p>
+                                                <p className="font-bellefair text-h5 uppercase">{data.destinations[selection].distance}</p>
+                                            </div>  
+                                            <div className="est-travel text-center desktop:text-left">
+                                                <p className="font-barlow text-bodytext text-violet uppercase tracking-widest">Est. Travel Time</p>
+                                                <p className="font-bellefair text-h5 uppercase">{data.destinations[selection].travel}</p>
+                                            </div> 
+                                        </div>
+                                         
                                     </Tab.Panel>
                                     <Tab.Panel className="text-white">
                                         <h4 className="text-h3 uppercase font-bellefair text-center">{data.destinations[selection].name}</h4>
@@ -139,7 +142,7 @@ const Destination = () => {
                                     </Tab.Panel>
                                     <Tab.Panel className="text-white">
                                         <h4 className="text-h3 uppercase font-bellefair text-center">{data.destinations[selection].name}</h4>
-                                        <p className="font-barlow text-[1.1rem] text-center leading-[25px] tracking-wider px-8">{data.destinations[selection].description}</p> 
+                                        <p className="font-barlow text-[1.1rem] text-center leading-[25px] tracking-wider px-8  ">{data.destinations[selection].description}</p> 
                                         <hr className="divide-white > * + * opacity-30 my-12" />
                                         <div className="avg-dist text-center mb-8">
                                             <p className="font-barlow text-bodytext text-violet uppercase tracking-widest">Avg. Distance</p>
