@@ -52,7 +52,7 @@ export const Navbar = () => {
                         <b className="tablet:hidden">01</b> Destination
                     </a>
                     </Link>
-                    <Link href='/'>
+                    <Link href='/crew'>
                     <a className='indent-10 tablet:indent-0 desktop:inline-flex desktop:w-auto w-full px-3 py-6 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
                     <b className="tablet:hidden">02</b> Crew
                     </a>
