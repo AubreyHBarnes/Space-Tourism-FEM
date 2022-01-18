@@ -100,54 +100,54 @@ const Destination = () => {
                                 <Tab.Panels>
                                     <Tab.Panel className="text-white">
                                         <h4 className="text-h3 uppercase font-bellefair text-center">{data.destinations[selection].name}</h4>
-                                        <p className="font-barlow text-[1.1rem] leading-[25px] tracking-wider">{data.destinations[selection].description}</p> 
+                                        <p className="font-barlow text-[1.1rem] text-center leading-[25px] tracking-wider px-8">{data.destinations[selection].description}</p> 
                                         <hr className="divide-white > * + * opacity-30 my-12" />
-                                        <div className="avg-dist">
-                                            <p>Avg. Distance</p>
-                                            <p>{data.destinations[selection].distance}</p>
+                                        <div className="avg-dist text-center mb-8">
+                                            <p className="font-barlow text-bodytext text-violet uppercase tracking-widest">Avg. Distance</p>
+                                            <p className="font-bellefair text-h5 uppercase">{data.destinations[selection].distance}</p>
                                         </div>  
-                                        <div className="est-travel">
-                                            <p>Est. Travel Time</p>
-                                            <p>{data.destinations[selection].travel}</p>
+                                        <div className="est-travel text-center">
+                                            <p className="font-barlow text-bodytext text-violet uppercase tracking-widest">Est. Travel Time</p>
+                                            <p className="font-bellefair text-h5 uppercase">{data.destinations[selection].travel}</p>
                                         </div>  
                                     </Tab.Panel>
                                     <Tab.Panel className="text-white">
                                         <h4 className="text-h3 uppercase font-bellefair text-center">{data.destinations[selection].name}</h4>
-                                        <p className="font-barlow text-[1.1rem] leading-[25px] tracking-wider">{data.destinations[selection].description}</p> 
+                                        <p className="font-barlow text-[1.1rem] text-center leading-[25px] tracking-wider px-8">{data.destinations[selection].description}</p> 
                                         <hr className="divide-white > * + * opacity-30 my-12" />
-                                        <div className="avg-dist">
-                                            <p>Avg. Distance</p>
-                                            <p>{data.destinations[selection].distance}</p>
+                                        <div className="avg-dist text-center mb-8">
+                                            <p className="font-barlow text-bodytext text-violet uppercase tracking-widest">Avg. Distance</p>
+                                            <p className="font-bellefair text-h5 uppercase">{data.destinations[selection].distance}</p>
                                         </div>  
-                                        <div className="est-travel">
-                                            <p>Est. Travel Time</p>
-                                            <p>{data.destinations[selection].travel}</p>
+                                        <div className="est-travel text-center">
+                                            <p className="font-barlow text-bodytext text-violet uppercase tracking-widest">Est. Travel Time</p>
+                                            <p className="font-bellefair text-h5 uppercase">{data.destinations[selection].travel}</p>
                                         </div>  
                                     </Tab.Panel>
                                     <Tab.Panel className="text-white">
                                         <h4 className="text-h3 uppercase font-bellefair text-center">{data.destinations[selection].name}</h4>
-                                        <p className="font-barlow text-[1.1rem] leading-[25px] tracking-wider">{data.destinations[selection].description}</p> 
+                                        <p className="font-barlow text-[1.1rem] text-center leading-[25px] tracking-wider px-8">{data.destinations[selection].description}</p> 
                                         <hr className="divide-white > * + * opacity-30 my-12" />
-                                        <div className="avg-dist">
-                                            <p>Avg. Distance</p>
-                                            <p>{data.destinations[selection].distance}</p>
+                                        <div className="avg-dist text-center mb-8">
+                                            <p className="font-barlow text-bodytext text-violet uppercase tracking-widest">Avg. Distance</p>
+                                            <p className="font-bellefair text-h5 uppercase">{data.destinations[selection].distance}</p>
                                         </div>  
-                                        <div className="est-travel">
-                                            <p>Est. Travel Time</p>
-                                            <p>{data.destinations[selection].travel}</p>
+                                        <div className="est-travel text-center">
+                                            <p className="font-barlow text-bodytext text-violet uppercase tracking-widest">Est. Travel Time</p>
+                                            <p className="font-bellefair text-h5 uppercase">{data.destinations[selection].travel}</p>
                                         </div>  
                                     </Tab.Panel>
                                     <Tab.Panel className="text-white">
                                         <h4 className="text-h3 uppercase font-bellefair text-center">{data.destinations[selection].name}</h4>
-                                        <p className="font-barlow text-[1.1rem] leading-[25px] tracking-wider">{data.destinations[selection].description}</p> 
+                                        <p className="font-barlow text-[1.1rem] text-center leading-[25px] tracking-wider px-8">{data.destinations[selection].description}</p> 
                                         <hr className="divide-white > * + * opacity-30 my-12" />
-                                        <div className="avg-dist">
-                                            <p>Avg. Distance</p>
-                                            <p>{data.destinations[selection].distance}</p>
+                                        <div className="avg-dist text-center mb-8">
+                                            <p className="font-barlow text-bodytext text-violet uppercase tracking-widest">Avg. Distance</p>
+                                            <p className="font-bellefair text-h5 uppercase">{data.destinations[selection].distance}</p>
                                         </div>  
-                                        <div className="est-travel">
-                                            <p>Est. Travel Time</p>
-                                            <p>{data.destinations[selection].travel}</p>
+                                        <div className="est-travel text-center">
+                                            <p className="font-barlow text-bodytext text-violet uppercase tracking-widest">Est. Travel Time</p>
+                                            <p className="font-bellefair text-h5 uppercase">{data.destinations[selection].travel}</p>
                                         </div>  
                                     </Tab.Panel>
                                 </Tab.Panels>
