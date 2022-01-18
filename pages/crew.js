@@ -10,6 +10,13 @@ const Crew = () => {
 
     const [selection, setSelection] = useState(0);
 
+    let imageSizes = [
+        [514, 700],
+        [433, 640],
+        [549, 645],
+        [575, 602]
+    ]
+
     const handleClick = (index) => {
         setSelection(index);
         
@@ -35,8 +42,8 @@ const Crew = () => {
                             <Image
                                     src={data.crew[selection].images.webp}
                                     alt="Moon" 
-                                    width={433} 
-                                    height={640} 
+                                    width={imageSizes[selection][0]} 
+                                    height={imageSizes[selection][1]} 
                                     loading="eager"
                                     layout="responsive"
                                     priority
