@@ -49,17 +49,17 @@ export const Navbar = () => {
                     </Link>
                     <Link href='/destination'>
                     <a className='indent-10 tablet:indent-0 desktop:inline-flex desktop:w-auto w-full px-3 py-6 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
-                        <b className="tablet:hidden">01</b> Destination
+                        <b className="tablet:hidden desktop:inline">01</b> Destination
                     </a>
                     </Link>
                     <Link href='/crew'>
                     <a className='indent-10 tablet:indent-0 desktop:inline-flex desktop:w-auto w-full px-3 py-6 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
-                    <b className="tablet:hidden">02</b> Crew
+                    <b className="tablet:hidden desktop:inline">02</b> Crew
                     </a>
                     </Link>
                     <Link href='/'>
                     <a className='indent-10 tablet:indent-0 desktop:inline-flex desktop:w-auto w-full px-3 py-6 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
-                    <b className="tablet:hidden">03</b> Technology
+                    <b className="tablet:hidden desktop:inline">03</b> Technology
                     </a>
                     </Link>
                 </div>
