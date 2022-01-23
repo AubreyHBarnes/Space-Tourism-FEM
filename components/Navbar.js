@@ -57,7 +57,7 @@ export const Navbar = () => {
                     <b className="tablet:hidden desktop:inline">02</b> Crew
                     </a>
                     </Link>
-                    <Link href='/'>
+                    <Link href='/technology'>
                     <a className='indent-10 tablet:indent-0 desktop:inline-flex desktop:w-auto w-full px-3 py-6 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
                     <b className="tablet:hidden desktop:inline">03</b> Technology
                     </a>

@@ -36,7 +36,10 @@ module.exports = {
         "dest-desktop": "url('/assets/destination/background-destination-desktop.jpg')",
         "crew": "url('/assets/crew/background-crew-mobile.jpg')",
         "crew-tablet": "url('/assets/crew/background-crew-tablet.jpg')",
-        "crew-desktop": "url('/assets/crew/background-crew-desktop.jpg')"
+        "crew-desktop": "url('/assets/crew/background-crew-desktop.jpg')",
+        "tech": "url('/assets/technology/background-technology-mobile.jpg')",
+        "tech-tablet": "url('/assets/technology/background-technology-tablet.jpg')",
+        "tech-desktop": "url('/assets/technology/background-technology-desktop.jpg')"
       }
     },
     colors: {

@@ -49,7 +49,7 @@ const Crew = () => {
                                     priority
                             />
                         </div>
-                        <div className="slider-container tablet:order-1">
+                        <div className="crew-tab-container tablet:order-1">
                             <Tab.Group 
                             as="div"
                             className="flex flex-col tablet:flex-col-reverse items-center desktop:items-left"
