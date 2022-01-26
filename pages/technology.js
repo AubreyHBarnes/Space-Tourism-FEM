@@ -24,24 +24,34 @@ const Destination = () => {
                 <Navbar />
                 <section className="my-16 tech-pg-wrapper">
                     <h1 className="uppercase text-white font-barlow text-h4 text-center tracking-widest"><span className="opacity-25">03 </span>Space Launch 101</h1>
-                    <div className="tech-container">
-                        <div className="tech-img-container relative aspect-[384/155]">
+                    <div className="tech-container desktop:flex desktop:flex-row-reverse desktop:justify-center desktop:items-center">
+                        <div className="tech-img-container relative aspect-[384/155] desktop:hidden">
                             <Image
                                     src="/assets/technology/image-launch-vehicle-landscape.jpg"
                                     alt="" 
                                     layout="fill"
-                                    objectFit="fill"
+                                    objectFit="cover"
                                     priority
                             />
                         </div>
-                        <div className="tech-tab-container px-8">
-                        <Tab.Group as="div" className="my-8 text-white font-bellefair text-[24px] flex flex-col items-center"
+                        <div className="desktop:basis-1/2 desktop:max-w-[515px] tech-img-container relative aspect-[515/527] hidden desktop:block">
+                            <Image
+                                    src="/assets/technology/image-launch-vehicle-portrait.jpg"
+                                    alt="" 
+                                    layout="fill"
+                                    objectFit="cover"
+                                    priority
+                            />
+                        </div>
+
+                        <div className="desktop:h-100 desktop:basis-1/2 tech-tab-container px-8">
+                        <Tab.Group as="div" className="my-8 desktop:h-100 text-white font-bellefair text-[24px] flex flex-col desktop:flex-row items-center"
                             onChange={(index) => {
                                 handleClick(index)
                             }}   
                         >
-                            <Tab.List className="my-8">
-                                    <Tab as="span">
+                            <Tab.List className="my-8 desktop:h-100 desktop:flex desktop:flex-col desktop:justify-center">
+                                    <Tab as="span" className="my-4">
                                     {({ selected }) => (
                                         <button
                                         className={
@@ -50,7 +60,7 @@ const Destination = () => {
                                         >1</button>
                                     )}
                                     </Tab>
-                                    <Tab as="span">
+                                    <Tab as="span" className="my-4">
                                     {({ selected }) => (
                                         <button
                                         className={
@@ -59,7 +69,7 @@ const Destination = () => {
                                         >2</button>
                                     )}
                                     </Tab>
-                                    <Tab as="span">
+                                    <Tab as="span" className="my-4">
                                     {({ selected }) => (
                                         <button
                                         className={
