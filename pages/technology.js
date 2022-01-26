@@ -25,12 +25,12 @@ const Destination = () => {
                 <section className="my-16 tech-pg-wrapper">
                     <h1 className="uppercase text-white font-barlow text-h4 text-center tracking-widest"><span className="opacity-25">03 </span>Space Launch 101</h1>
                     <div className="tech-container">
-                        <div className="tech-img-container m-auto relative w-[768px] h-[310px]">
+                        <div className="tech-img-container relative aspect-[384/155]">
                             <Image
                                     src="/assets/technology/image-launch-vehicle-landscape.jpg"
                                     alt="" 
                                     layout="fill"
-                                    objectFit="scale-down"
+                                    objectFit="fill"
                                     priority
                             />
                         </div>
