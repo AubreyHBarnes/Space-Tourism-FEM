@@ -22,12 +22,12 @@ const Destination = () => {
             <div className="main-wrapper h-100 overflow-hidden relative bg-tech tablet:bg-tech-tablet 
             desktop:bg-tech-desktop bg-no-repeat bg-cover">
                 <Navbar />
-                <section className="my-16 tech-pg-wrapper">
+                <section className="my-16 tech-pg-wrapper max-w-[1024px] desktop:max-w-full">
                     <h1 className="uppercase text-white font-barlow text-h4 text-center tracking-widest"><span className="opacity-25">03 </span>Space Launch 101</h1>
-                    <div className="tech-container desktop:flex desktop:flex-row-reverse desktop:justify-center desktop:items-center">
-                        <div className="tech-img-container relative aspect-[384/155] desktop:hidden">
+                    <div className="tech-container max-w-[768px] desktop:max-w-full m-auto desktop:flex desktop:flex-row-reverse desktop:justify-center desktop:items-center">
+                        <div className="tech-img-container  m-auto relative aspect-[384/155] desktop:hidden">
                             <Image
-                                    src="/assets/technology/image-launch-vehicle-landscape.jpg"
+                                    src={data.technology[selection].images.landscape}
                                     alt="" 
                                     layout="fill"
                                     objectFit="cover"
@@ -36,7 +36,7 @@ const Destination = () => {
                         </div>
                         <div className="desktop:basis-1/2 desktop:max-w-[515px] tech-img-container relative aspect-[515/527] hidden desktop:block">
                             <Image
-                                    src="/assets/technology/image-launch-vehicle-portrait.jpg"
+                                    src={data.technology[selection].images.portrait}
                                     alt="" 
                                     layout="fill"
                                     objectFit="cover"
