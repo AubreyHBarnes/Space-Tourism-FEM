@@ -28,6 +28,10 @@ const Crew = () => {
                 <title>Meet Your Crew</title>
                 <meta name="description" content="Description for Space Tourism" />
                 <link rel="icon" href="/favicon.ico" />
+                <link rel="preload" as="image" href="/assets/crew/image-douglas-hurley.png"></link>
+                <link rel="preload" as="image" href="/assets/crew/image-mark-shuttleworth.png"></link>
+                <link rel="preload" as="image" href="/assets/crew/image-victor-glover.png"></link>
+                <link rel="preload" as="image" href="/assets/crew/image-anousheh-ansari.png"></link>
             </Head>
             <div className="main-wrapper h-full desktop:h-screen overflow-hidden relative bg-crew tablet:bg-crew-tablet 
             desktop:bg-crew-desktop bg-no-repeat bg-cover">
@@ -40,13 +44,12 @@ const Crew = () => {
                     <div className="crew-container grid grid-rows-2 tablet:grid-rows-[200px_minmax(600px,_1fr)_0px] desktop:grid-cols-2 desktop:grid-rows-1">
                         <div className="crew-img-container self-center tablet:self-end tablet:order-2 px-[22.5%] tablet:px-[27%] desktop:px-[15%]">
                             <Image
-                                    src={data.crew[selection].images.webp}
+                                    src={data.crew[selection].images.png}
                                     alt="Moon" 
                                     width={imageSizes[selection][0]} 
                                     height={imageSizes[selection][1]} 
-                                    loading="eager"
-                                    layout="responsive"
                                     priority
+
                             />
                         </div>
                         <div className="crew-tab-container tablet:order-1">

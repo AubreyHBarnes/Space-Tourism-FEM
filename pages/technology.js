@@ -1,13 +1,15 @@
 import Head from "next/head";
+import { useState } from "react";
 import { Tab } from "@headlessui/react";
 import Image from "next/image";
 import { Navbar } from '../components/Navbar';
 import data from '../data.json'
 
 const Destination = () => {
+    const [selection, setSelection] = useState(0);
 
     const handleClick = (index) => {
-        console.log(index);
+        setSelection(index);
     }
 
     return (
@@ -17,25 +19,23 @@ const Destination = () => {
                 <meta name="description" content="Description for Space Tourism" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className="main-wrapper h-screen overflow-hidden relative bg-tech tablet:bg-tech-tablet 
+            <div className="main-wrapper h-100 overflow-hidden relative bg-tech tablet:bg-tech-tablet 
             desktop:bg-tech-desktop bg-no-repeat bg-cover">
                 <Navbar />
                 <section className="my-16 tech-pg-wrapper">
                     <h1 className="uppercase text-white font-barlow text-h4 text-center tracking-widest"><span className="opacity-25">03 </span>Space Launch 101</h1>
                     <div className="tech-container">
-                        <div className="tech-img-container">
+                        <div className="tech-img-container m-auto relative w-[768px] h-[310px]">
                             <Image
                                     src="/assets/technology/image-launch-vehicle-landscape.jpg"
                                     alt="" 
-                                    width="768"
-                                    height="310"
-                                    loading="eager"
-                                    layout="responsive"
+                                    layout="fill"
+                                    objectFit="scale-down"
                                     priority
                             />
                         </div>
-                        <div className="tech-tab-container">
-                        <Tab.Group as="div" className="text-white font-bellefair text-[24px] flex flex-col items-center"
+                        <div className="tech-tab-container px-8">
+                        <Tab.Group as="div" className="my-8 text-white font-bellefair text-[24px] flex flex-col items-center"
                             onChange={(index) => {
                                 handleClick(index)
                             }}   
@@ -70,9 +70,22 @@ const Destination = () => {
                                     </Tab>
                                 </Tab.List>
                             <Tab.Panels>
-                                <Tab.Panel>Content 1</Tab.Panel>
-                                <Tab.Panel>Content 2</Tab.Panel>
-                                <Tab.Panel>Content 3</Tab.Panel>
+                                
+                                <Tab.Panel className="text-white p-4">
+                                    <p className="uppercase font-barlow text-[1.2rem] text-violet tracking-widest text-center desktop:text-left">The Terminology ...</p>
+                                    <h3 className="uppercase font-bellefair tracking-wider text-center text-[2rem] desktop:text-left">{data.technology[selection].name}</h3>
+                                    <p className="font-barlow text-[1.25rem] text-violet text-center leading-[1.75rem]">{data.technology[selection].description}</p>
+                                </Tab.Panel>
+                                <Tab.Panel className="text-white p-4">
+                                    <p className="uppercase font-barlow text-[1.2rem] text-violet tracking-widest text-center desktop:text-left">The Terminology ...</p>
+                                    <h3 className="uppercase font-bellefair tracking-wider text-center text-[2rem] desktop:text-left">{data.technology[selection].name}</h3>
+                                    <p className="font-barlow text-[1.25rem] text-violet text-center leading-[1.75rem]">{data.technology[selection].description}</p>
+                                </Tab.Panel>
+                                <Tab.Panel className="text-white p-4">
+                                    <p className="uppercase font-barlow text-[1.2rem] text-violet tracking-widest text-center desktop:text-left">The Terminology ...</p>
+                                    <h3 className="uppercase font-bellefair tracking-wider text-center text-[2rem] desktop:text-left">{data.technology[selection].name}</h3>
+                                    <p className="font-barlow text-[1.25rem] text-violet text-center leading-[1.75rem]">{data.technology[selection].description}</p>
+                                </Tab.Panel>
                             </Tab.Panels>
                         </Tab.Group>
 
